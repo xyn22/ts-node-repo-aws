@@ -1,7 +1,8 @@
-import express from "express";
-const app  = express();
+import express from 'express';
+
+const app = express();
 const DEFAULT_PORT = 3000;
-const port = parseInt(process.env.PORT || '' ) || DEFAULT_PORT;
+const port = parseInt(process.env.PORT || '', 10) || DEFAULT_PORT;
 
 app.use('/', (req, res) => res.send('🍪'));
 
