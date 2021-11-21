@@ -4,8 +4,8 @@
   "description": "boilerplate for empty node-typescript app with express",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "NODE_ENVIRONMENT=DEV ts-node-dev src/index.ts --watch ",
-    "start": "NODE_ENVIRONMENT=PROD ts-node src/index.ts",
+    "dev": "NODE_ENVIRONMENT=DEV HOSTNAME=`hostname` ts-node-dev src/index.ts --watch ",
+    "start": "NODE_ENVIRONMENT=PROD HOSTNAME=`hostname` ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "xyn22",
